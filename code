@@ -1,0 +1,15 @@
+print('Kiểm tra số chính phương')
+
+i = 0
+n = int(input('Nhập vào số cần kiểm tra: '))
+ok = False
+while i*i <= n:
+    if i*i == n:
+        ok = True
+        break
+    else:
+        i += 1
+if ok == True:
+    print(f'{n} là số chính phương')
+else:
+    print(f'{n} không phải là số chính phương')
